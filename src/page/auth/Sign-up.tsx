@@ -22,7 +22,7 @@ import { Input } from "@/components/ui/input";
 import Logo from "@/components/logo";
 import { useMutation } from "@tanstack/react-query";
 import { registerMutationFn } from "@/lib/api";
-import { LoginResponseType, loginType } from "@/types/api.type";
+//import { LoginResponseType, loginType } from "@/types/api.type";
 import GoogleOauthButton from "@/components/auth/google-oauth-button";
 import { toast } from "@/hooks/use-toast";
 import { Loader } from "lucide-react";
@@ -30,7 +30,7 @@ import { Loader } from "lucide-react";
 const SignUp = () => {
 
   const navigate = useNavigate();
-  const mutation = useMutation<LoginResponseType, Error, loginType>({
+  const mutation = useMutation({
     mutationFn: registerMutationFn,
   });
 
