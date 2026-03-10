@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Calendar } from "@/components/ui/calendar";
 
-import { cn } from "@/lib/utils";
+
 import { getAvatarColor, getAvatarFallbackText, transformOptions } from "@/lib/helper";
 
 import useWorkspaceId from "@/hooks/use-workspace-id";
